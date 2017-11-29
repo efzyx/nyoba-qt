@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>759</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Halaman Utama</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>741</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelWelcome">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>701</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditUser">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>30</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>741</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Laporan Nilai</string>
+    </property>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>731</width>
+       <height>261</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>10</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonRefresh">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>10</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Refresh</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonLoad">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>10</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Load</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>330</y>
+       <width>301</width>
+       <height>201</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>380</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>340</y>
+       <width>151</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonStatis">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>420</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Load</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonPrint">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>10</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Print</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>759</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuInput_Data">
+    <property name="title">
+     <string>Input Data</string>
+    </property>
+    <addaction name="actionDosen"/>
+    <addaction name="actionMahasiswa"/>
+    <addaction name="actionMatakuliah"/>
+    <addaction name="actionUser"/>
+   </widget>
+   <widget class="QMenu" name="menuNilai">
+    <property name="title">
+     <string>Nilai</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionInput"/>
+    <addaction name="actionLaporan"/>
+   </widget>
+   <widget class="QMenu" name="menuHome">
+    <property name="title">
+     <string>Home</string>
+    </property>
+    <addaction name="actionHalaman_Utama"/>
+    <addaction name="actionKeluar"/>
+   </widget>
+   <addaction name="menuHome"/>
+   <addaction name="menuInput_Data"/>
+   <addaction name="menuNilai"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDosen">
+   <property name="text">
+    <string>Dosen</string>
+   </property>
+  </action>
+  <action name="actionMahasiswa">
+   <property name="text">
+    <string>Mahasiswa</string>
+   </property>
+  </action>
+  <action name="actionMatakuliah">
+   <property name="text">
+    <string>Matakuliah</string>
+   </property>
+  </action>
+  <action name="actionUser">
+   <property name="text">
+    <string>User</string>
+   </property>
+  </action>
+  <action name="actionInput">
+   <property name="text">
+    <string>Input</string>
+   </property>
+  </action>
+  <action name="actionLaporan">
+   <property name="text">
+    <string>Laporan</string>
+   </property>
+  </action>
+  <action name="actionHalaman_Utama">
+   <property name="text">
+    <string>Halaman Utama</string>
+   </property>
+  </action>
+  <action name="actionKeluar">
+   <property name="text">
+    <string>Keluar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>createPDF()</slot>
+ </slots>
+</ui>
